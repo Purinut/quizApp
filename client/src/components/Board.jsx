@@ -1,6 +1,17 @@
 import React from "react";
 
+//material UI components
+import ButtonGroup from '@material-ui/core/ButtonGroup';
+import Button from '@material-ui/core/Button';
+
+//material UI Icons
+import DeleteIcon from '@material-ui/icons/Delete';
+import AddIcon from '@material-ui/icons/Add';
+
+//custom components
 import BoardItem from "./BoardItem";
+
+//testing file
 import Sample from "../sample_questions.json";
 
 function Board(){
@@ -8,6 +19,11 @@ function Board(){
         <div className="board">
             <div className="boardHeader">
                 <h3>All Quizes</h3>
+                <ButtonGroup variant="text" color="primary" aria-label="text primary button group">
+                    <Button><DeleteIcon /></Button>
+                    <Button><AddIcon /></Button>
+                </ButtonGroup>
+                
             </div>
 
             <div className="boardBody">
