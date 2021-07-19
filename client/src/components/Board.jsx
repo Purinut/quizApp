@@ -15,13 +15,17 @@ import BoardItem from "./BoardItem";
 import Sample from "../sample_questions.json";
 
 function Board(){
+    const handleDelete = () => {
+        
+    }
+
     return (
         <div className="board">
             <div className="boardHeader">
                 <h3>All Quizes</h3>
                 <ButtonGroup variant="text" color="primary" aria-label="text primary button group">
-                    <Button><DeleteIcon /></Button>
-                    <Button><AddIcon /></Button>
+                    <Button onClick={handleDelete}><DeleteIcon /></Button>
+                    <Button href="/create-quiz"><AddIcon /></Button>
                 </ButtonGroup>
                 
             </div>
